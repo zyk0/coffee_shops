@@ -1,0 +1,31 @@
+.order-container {
+	position: fixed;
+	right: 1px;
+    height: 0px;
+    padding: 15px;
+}
+.order-counter {
+    margin-left: auto;
+    padding-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-count > img{
+	width: 110px;
+	height: 110px;
+	border-radius: 100px; /* Радиус скругления */
+    border: 4px solid #808080;	
+		/* Параметры рамки */
+	box-shadow: 0 0 11px #808080	; 
+		/* Параметры тени */
+	
+}
+.icon-number{
+	background-color: coral;
+	color: #ffffff;
+	border-radius: 100px; /* Радиус скругления */
+	padding: 5px 5px 5px 5px;
+	margin-left: -20px;
+	padding: 5px 13px 5px 13px;
+
+}

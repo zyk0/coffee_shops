@@ -1,0 +1,20 @@
+{
+  "name": "coffee_shop",
+  "version": "1.0.0",
+  "description": "to order a cup of coffee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "onlineshop",
+    "localstorage",
+    "cssGRID",
+    "json"
+  ],
+  "author": "zyk0",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

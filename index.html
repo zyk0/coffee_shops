@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> кофе </title>
+	<link rel="icon" href="coffee-cup.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    
+    <link rel="stylesheet" href="coff-css.css">
+	<link rel="stylesheet" href="coff-grid.css">
+</head>
+<body>
+	<header>
+		<div class="logo">Coffee shop</div>
+	</header>
+	<!--   меню   -->
+	<nav class="menu" id="main-menu">
+		<button class="menu-toggle" id="toggle-menu">
+			toggle menu
+		</button>
+		<div class="menu-dropdown">
+			<ul class="nav-menu">
+				<li><a href="index4.html"> кофейня </a></li>
+				<li><a href="index.html">  кофе    </a></li>
+				<li><a href="index2.html"> торты   </a></li>
+				<li><a href="index3.html"> заказ   </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="box"></div>
+	
+	<main class="main">
+	
+      <section class="info1">	
+        <p class="coff-text">
+			Когда вы в последний раз 
+			садились с чашкой кофе и ничего не делали, 
+			кроме как наслаждаться этим кофе?
+		</p>
+      </section>
+	  
+      <figure class="figure1">
+         <img class="figure-img" src="coffeee/coff_3.jpg" >
+      </figure>
+      <figure class="figure2">
+         <img class="figure-img" src="coffeee/coff_6.jpg" >
+      </figure>
+      <figure class="figure3">
+         <img class="figure-img" src="coffeee/coff_4_.jpg" >
+      </figure>
+	  
+      <figure class="figure4">
+        <p class="coff-text">
+			Уютная кофейня в самом сердце города.
+			<br>
+			На завтрак пирог с черникой
+		</p>
+      </figure>
+      <figure class="figure5">
+		 <div class="attic">Мокко</div>
+         <img class="figure-img" src="coffeee/coff_8_.jpg" >
+      </figure>
+      <figure class="figure6">
+		 <div class="attic">CafeLatte</div>
+         <img class="figure-img" src="coffeee/coff_2_.jpg" >
+      </figure>
+	  
+      <section class="info2">
+        <p class="coff-text">
+			Вкусные десерты и очень хороший кофе.
+			<br>
+			Место с отличной атмосферой.
+			<br>
+		</p>
+      </section>
+	  
+      <figure class="figure7 bright">
+		 <div class="attic">Cappuccino</div>
+         <img class="figure-img" src="coffeee/coff_5.jpg" >
+      </figure>
+      <figure class="figure7 bright">
+		 <div class="attic">Macchiato</div>
+         <img class="figure-img" src="coffeee/coff_9.jpg" >
+      </figure>
+	  
+	</main>
+	
+<ul class="footer-container">
+  <li class="footer-item">Пн.-Вс.: 11:00 - 21:00</li>
+  <li class="footer-item"><img src="img/pay.png"></li>
+  <li class="footer-item"><img class="png_paymant" src="img/776510.png"></li>
+  <li class="footer-item todaydate"><span class="">todaydate</span></li>
+</ul>
+<script type="text/javascript">
+	(function() {
+		var menuButton = document.getElementById('toggle-menu');
+		menuButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			let menu = document.getElementById('main-menu');
+			menu.classList.toggle('is-open');
+		});
+	})();
+</script>
+<script src="today.js"></script>
+</body>
+</html>

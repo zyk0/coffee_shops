@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> заказать </title>
+
+	<link rel="icon" href="coffee-cup.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="coff-css.css">
+</head>
+<body>
+	<header>
+		<div class="logo">Coffee shop</div>
+	</header>
+	<!--   меню   -->
+	<nav class="menu" id="main-menu">
+		<button class="menu-toggle" id="toggle-menu">
+			toggle menu
+		</button>
+		<div class="menu-dropdown">
+			<ul class="nav-menu">
+				<li><a href="index4.html"> кофейня </a></li>
+				<li><a href="index.html">  кофе    </a></li>
+				<li><a href="index2.html"> торты   </a></li>
+				<li><a href="index3.html"> заказ   </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="box"></div>
+
+	<div class="main">
+
+<!-- Store start  - - - - - - - -- -  - - - - - -  - - - - -- - -->
+	<div id="order"></div>
+    <div id="products"></div>
+    <div id="shopping"></div>
+
+    <!-- Constants and localstor -->
+	<!--
+	 const CATALOG = [{},{},{}] // массив данных
+    <script src="constants/json.js"></script>
+	-->
+    <script src="constants/const.js"></script>
+    <script src="localstor/localStorageCoffee.js"></script>
+
+    <!-- Order -->
+    <script src="components/Order/Order.js"></script>
+    <link rel="stylesheet" href="components/Order/Order.css">
+
+    <!-- Products -->
+    <script src="components/Products/Products.js"></script>
+    <link rel="stylesheet" href="components/Products/Products.css">
+
+    <!-- Shopping -->
+    <script src="components/Shopping/Shopping.js"></script>
+    <link rel="stylesheet" href="components/Shopping/Shopping.css">
+	
+	<script src="index.js"></script>
+<!-- Store end  - - - - - - - - - - - - - - - - - - - - - - - - -->
+	</div>
+		<!-- footer -->
+	<ul class="footer-container">
+	  <li class="footer-item">Пн.-Вс.: 11:00 - 21:00</li>
+	  <li class="footer-item"><img src="img/pay.png"></li>
+	  <li class="footer-item"><img class="png_paymant" src="img/776510.png"></li>
+	  <li class="footer-item todaydate"><span class="">todaydate</span></li>
+	</ul>
+	
+	<script src="index.js"></script>
+	
+<script type="text/javascript">
+	(function() {
+		var menuButton = document.getElementById('toggle-menu');
+		menuButton.addEventListener('click', function(event) {
+			//event.preventDefault();
+			let menu = document.getElementById('main-menu');
+			menu.classList.toggle('is-open');
+		});
+	})();
+</script>
+<script src="today.js"></script>	
+</body>
+</html>

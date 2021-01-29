@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee here</title>
+	<link rel="icon" href="coffee-cup.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="coff-css.css">
+	
+</head>
+<body>
+	<header>
+		<div class="logo">Coffee shop</div>
+	</header>
+	<!--   меню   -->
+	<nav class="menu" id="main-menu">
+		<button class="menu-toggle" id="toggle-menu">
+			toggle menu
+		</button>
+		<div class="menu-dropdown">
+			<ul class="nav-menu">
+				<li><a href="index4.html"> кофейня </a></li>
+				<li><a href="index.html">  кофе    </a></li>
+				<li><a href="index2.html"> торты   </a></li>
+				<li><a href="index3.html"> заказ   </a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="box"></div>
+
+
+<div class="block">
+  <div class="block-item block-item1"></div>
+  <div class="block-item block-item2"></div>
+  <div class="block-item block-item3"></div>
+</div>
+
+<ul class="footer-container">
+  <li class="footer-item">Пн.-Вс.: 11:00 - 21:00</li>
+  <li class="footer-item"><img src="img/pay.png"></li>
+  <li class="footer-item"><img class="png_paymant" src="img/776510.png"></li>
+  <li class="footer-item todaydate"><span class="">todaydate</span></li>
+</ul>
+<script type="text/javascript">
+	(function() {
+		var menuButton = document.getElementById('toggle-menu');
+		menuButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			let menu = document.getElementById('main-menu');
+			menu.classList.toggle('is-open');
+		});
+	})();
+</script>
+<script src="today.js"></script>
+</body>
+</html>

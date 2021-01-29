@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> кофе </title>
+	<link rel="icon" href="coffee-cup.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="coff-css.css">
+	<link rel="stylesheet" href="coff-grid.css">
+</head>
+<body>
+	<header>
+		<div class="logo">Coffee shop</div>
+	</header>
+	<!--   меню   -->
+	<nav class="menu" id="main-menu">
+		<button class="menu-toggle" id="toggle-menu">
+			toggle menu
+		</button>
+		<div class="menu-dropdown">
+			<ul class="nav-menu">
+				<li><a href="index4.html"> кофейня </a></li>
+				<li><a href="index.html">  кофе    </a></li>
+				<li><a href="index2.html"> торты   </a></li>
+				<li><a href="index3.html"> заказ   </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="box"></div>
+	
+	<main class="main">
+	
+      <section class="info1">	
+        <p class="coff-text">
+			Что касается кофе, то, помимо классики, можно найти кое-что интересное: 
+			например, кофейный ламбик на основе двойного эспрессо с чаем каркаде.
+		</p>
+      </section>
+	  
+      <figure class="figure1">
+         <img class="figure-img" src="coffeee/coff_1.jpg" >
+      </figure>
+      <figure class="figure2">
+        <p class="coff-text">
+			Крошечная кофейня с домашней выпечкой.
+		</p>
+      </figure>
+      <figure class="figure3">
+         <img class="figure-img" src="coffeee/coff_4_.jpg" >
+      </figure>
+	  
+      <figure class="figure4">
+         <img class="figure-img" src="coffeee/cake3.jpg" >
+      </figure>
+	  
+      <figure class="figure5 ">
+        <p class="coff-text">
+			Атмосфера уюта и лаунжа,
+			место для уютного вечера с друзьями.
+		</p>
+      </figure>
+	  
+      <figure class="figure6">
+         <img class="figure-img" src="coffeee/cake5.jpg" >
+      </figure>
+	  
+      <section class="info2">
+        <p class="coff-text">
+			Собственная кондитерская с домашними десертами
+			На завтрак пирог с черникой
+		</p>
+      </section>
+	  
+	</main>
+	
+<ul class="footer-container">
+  <li class="footer-item">Пн.-Вс.: 11:00 - 21:00</li>
+  <li class="footer-item"><img src="img/pay.png"></li>
+  <li class="footer-item"><img class="png_paymant" src="img/776510.png"></li>
+  <li class="footer-item todaydate"><span class="">todaydate</span></li>
+</ul>
+<script type="text/javascript">
+	(function() {
+		var menuButton = document.getElementById('toggle-menu');
+		menuButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			let menu = document.getElementById('main-menu');
+			menu.classList.toggle('is-open');
+		});
+	})();
+</script>
+<script src="today.js"></script>
+</body>
+</html>

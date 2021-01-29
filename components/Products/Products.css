@@ -1,0 +1,72 @@
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* repeat: повторить(сколько раз повторить, что повторить)  */
+    grid-gap: 20px;
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+	
+}
+.products-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 20px 20px 20px;
+    background-color: #ece0d1;
+    
+    box-shadow: 0 16px 24px 2px rgba(33,37,41,.02),
+				0 6px 30px 5px rgba(33,37,41,.04),
+				0 8px 10px -5px rgba(33,37,41,.1);
+}
+.products-element__name {
+    margin-bottom: auto;
+	color: #3c2a1e;
+    font-weight: bold;
+}
+.products-element__img {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.products-element__price {
+    margin-top: 10px;
+    color: #3c2a1e;
+}
+.products-element__btn {
+    margin-top: 15px;
+    padding: 10px 10px;
+    border: 1px solid #808080;
+   
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+.products-element__btn:hover {
+    margin-top: 15px;
+    padding: 10px 10px;
+    border: 1px solid #808080;
+    
+    cursor: pointer;
+    outline: none;
+	
+    background: #FFE4C4;
+    font-family: inherit;
+    font-size: inherit;
+}
+.products-element__btn_active {
+    border: 1px solid transparent;
+    background: #CD853F;
+}
+
+@media (max-width: 375px) {
+	.products-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 5px;
+		width: 85%;
+	}
+}
