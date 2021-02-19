@@ -1,4 +1,4 @@
-class LocalStorageCoffee {
+﻿class LocalStorageCoffee {
     constructor() {
         this.keyName = 'products';
     }

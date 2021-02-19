@@ -1,9 +1,9 @@
-const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+﻿const monthNames = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "оентября", "октября", "ноября", "декабря"];
 const dateObj = new Date();
 	console.log('dateObj: ', dateObj);
 const month = monthNames[dateObj.getMonth()];
-const day = String(dateObj.getDate()).padStart(2, '0');
+const day = dateObj.getDate();
 const year = dateObj.getFullYear();
-const output = month  + '\n'+ day  + ', ' + year;
+const output =  day + '\n' + month +', ' + year;
 
 document.querySelector('.todaydate').textContent = output; 

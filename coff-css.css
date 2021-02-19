@@ -62,37 +62,6 @@ header{
 			flex-direction: row-reverse;
 		}
 
-.block {
-    display: flex;
-	margin: 0 auto;
-    height: 80%;
-    width: 100%;
-	flex-wrap: wrap;
-	
-	
-  }
-.block-item {
-    order:2;
-    flex:1;
-	height: 500px;
-  }
-.block-item1 {background-image: url("img/2.jpg");}
-.block-item2 {
-	flex:2; 
-	background-image: url("img/1.jpg");
-	background-repeat: no-repeat;
-	margin-left: 15%;	
-	}
-.block-item3 {background-image: url("img/2.jpg");}
-
-@media(max-width: 500px) {
-  .block-item2 {
-      flex: 100%;
-      order: 1;
-	  margin: 0 auto;
-    }	
-  }
-
 .footer-container {
   display: flex;
   flex-direction: row;

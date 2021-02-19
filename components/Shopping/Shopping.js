@@ -1,4 +1,4 @@
-class Shopping {
+﻿class Shopping {
     handleClear() {
         CONST_SHOPPING.innerHTML = '';
     }
