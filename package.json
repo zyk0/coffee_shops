@@ -4,7 +4,7 @@
   "description": "to order a cup of coffee",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "http-server -a localhost -p 9099 -c-1"
   },
   "keywords": [
     "onlineshop",
