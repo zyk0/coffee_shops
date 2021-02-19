@@ -1,0 +1,45 @@
+﻿#coffeapi{
+    max-width: 1280px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 400px;
+    background-color: #6f4e37;
+    border-radius: 0px;
+    overflow: hidden;
+	margin: 10px 10px 10px 10px;
+}
+
+h6{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+	background: #747474;
+    font-size: 1rem;
+    color: white;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.cardimg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 600px){
+    .card{
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+@media (min-width: 900px){
+    .card{
+        flex: 1 1 calc(33% - 2rem);
+    }
+}

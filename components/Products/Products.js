@@ -1,4 +1,4 @@
-class Products {
+﻿class Products {
     constructor() {
         this.classNameActive = 'products-element__btn_active';
         this.labelAdd =    'Заказать';

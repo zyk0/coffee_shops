@@ -1,4 +1,4 @@
-/*CATALOG = [];*/
+﻿/*CATALOG = [];*/
 
 function render() {
 	/* из order.js */
