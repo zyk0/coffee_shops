@@ -16,19 +16,29 @@
 
 h6{
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    
 	background: #747474;
     font-size: 1rem;
     color: white;
 	margin-top: 0px;
-    margin-right: 0px;
+    margin-right: 10%;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 10%;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*
+	padding-left: 10%;
+	padding-right: 10%;
+	*/
+    width: 80%;
 }
 
 .cardimg{
     display: block;
-    width: 100%;
+	padding-left: 10%;
+	padding-right: 10% ;
+    width: 80%;
     height: 100%;
     object-fit: cover;
 }
