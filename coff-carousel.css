@@ -1,0 +1,39 @@
+.coffimg {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.carousel {
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-slide {
+  background-color: #4f3b2c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.9%;
+}
+
+.button-slide:hover {
+  opacity: 0.9;
+}
+
+.button-slide:focus {
+  outline: none;
+}

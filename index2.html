@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> кофе </title>
+    <title> торты </title>
 	<link rel="icon" href="coffee-cup.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     
     <link rel="stylesheet" href="coff-css.css">
 	<link rel="stylesheet" href="coff-grid.css">
+	<link rel="stylesheet" href="coff-carousel.css">
 </head>
 <body>
 	<header>
@@ -40,29 +42,54 @@
       </section>
 	  
       <figure class="figure1">
-         <img class="figure-img" src="coffeee/coff_1.jpg" >
+				<div class="carousel">
+				  <div class="image-container" id="imgs">
+					<img 
+					src="coffeee/coff_6.jpg"
+					class="coffimg"
+					alt="first-image"
+				   />
+				<img
+				   src="coffeee/coff_8.jpg"
+				   class="coffimg"
+				   alt="second-image"
+				   />
+				<img
+				   src="coffeee/coff_7.jpg"
+				   class="coffimg"
+				   alt="third-image"
+				   />
+				<img
+				   src="coffeee/coff_9.jpg"
+				   class="coffimg"
+				   alt="fourth-image"
+				   />
+				  </div>
+
+				  <div class="buttons-container">
+					<button id="left" class="button-slide">&#9668;  </button>
+					<button id="right" class="button-slide">  &#9658;</button>
+				  </div>
+				</div>
       </figure>
       <figure class="figure2">
+         <img class="figure-img" src="coffeee/coff_6.jpg" >
+      </figure>
+      <figure class="figure3">
+         <img class="figure-img" src="coffeee/cake3.jpg" >
+      </figure>
+	  
+      <figure class="figure4">
         <p class="coff-text">
 			Крошечная кофейня с домашней выпечкой.
 		</p>
       </figure>
-      <figure class="figure3">
-         <img class="figure-img" src="coffeee/coff_4_.jpg" >
+      <figure class="figure5">
+		 <div class="attic">Мокко</div>
+         <img class="figure-img" src="coffeee/cake2.jpg" >
       </figure>
-	  
-      <figure class="figure4">
-         <img class="figure-img" src="coffeee/cake3.jpg" >
-      </figure>
-	  
-      <figure class="figure5 ">
-        <p class="coff-text">
-			Атмосфера уюта и лаунжа,
-			место для уютного вечера с друзьями.
-		</p>
-      </figure>
-	  
       <figure class="figure6">
+		 <div class="attic">CafeLatte</div>
          <img class="figure-img" src="coffeee/cake5.jpg" >
       </figure>
 	  
@@ -91,6 +118,7 @@
 		});
 	})();
 </script>
+<script src="coff-carousel.js"></script>
 <script src="today.js"></script>
 </body>
 </html>

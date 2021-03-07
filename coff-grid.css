@@ -33,6 +33,8 @@
 
 /* Mobile :320px. */
 @media (max-width: 375px) {
+	.carousel { display: none; }
+	
 	.coff-text { font-size: 6vw; }
 }
 
