@@ -1,0 +1,87 @@
+.modal-button {
+  padding: 12px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #7f5e46;
+  border: 1px solid #7f5e46;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-header {
+  background: #4f3b2c;
+  color: #cfbaab;
+  padding: 10px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 10px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+}
+
+.close-modal-button{
+  background: transparent;
+  font-size: 27px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; 
+  background-color: #ffffff;
+}
+
+.submit-modal-button{
+  background: #4f3b2c;
+  color: #cfbaab;
+  font-size: 20px;
+  padding:  10px 10px 10px 10px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

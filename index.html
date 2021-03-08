@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="coff-css.css">
 	<link rel="stylesheet" href="coff-grid.css">
+	<link rel="stylesheet" href="modal.css">
 </head>
 <body>
 	<header>
@@ -39,18 +40,22 @@
 			садились с чашкой кофе и ничего не делали, 
 			кроме как наслаждаться этим кофе?
 		</p>
-      </section>
+		<br>
+		<p class="coff-text">
+			<button class="modal-button" id="openmodal">Заявка на доставку</button>
+		</p>
+	  </section>
 	  
       <figure class="figure1">
          <img class="figure-img" src="coffeee/coff_3.jpg" >
       </figure>
-      <figure class="figure2">
+      <figure class="figure2 bright">
+		 <div class="attic">CafeLatte</div>
          <img class="figure-img" src="coffeee/coff_6.jpg" >
       </figure>
-      <figure class="figure3">
+      <figure class="figure3 bright">
          <img class="figure-img" src="coffeee/coff_4_.jpg" >
       </figure>
-	  
       <figure class="figure4">
         <p class="coff-text">
 			Уютная кофейня в самом сердце города.
@@ -58,7 +63,7 @@
 			На завтрак пирог с черникой
 		</p>
       </figure>
-      <figure class="figure5">
+      <figure class="figure5 bright">
 		 <div class="attic">Мокко</div>
          <img class="figure-img" src="coffeee/coff_8_.jpg" >
       </figure>
@@ -76,17 +81,77 @@
 		</p>
       </section>
 	  
-      <figure class="figure7 bright">
+      <figure class="figure7 ">
 		 <div class="attic">Cappuccino</div>
          <img class="figure-img" src="coffeee/coff_5.jpg" >
       </figure>
-      <figure class="figure7 bright">
+      <figure class="figure7 ">
 		 <div class="attic">Macchiato</div>
          <img class="figure-img" src="coffeee/coff_9.jpg" >
       </figure>
 	  
 	</main>
 	
+<!-- модальное окно start-->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-modal-button" id="close">
+          &#10006;	
+        </button>
+        <div class="modal-header">
+          <h3>Оставить заявку на доставку</h3>
+        </div>
+        <div class="modal-content">
+          <p>Заполните поля:</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Имя</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="имя"
+                class="form-input"
+              />
+            </div>
+			<div>
+			  <label for="email">Дата</label>
+			  <input 
+				type="date" 
+				id="start" 
+				name="trip-start"
+				value=""
+				min="2021-03-03" 
+				max="2021-12-31"
+				class="form-input"
+			  />
+			</div>
+            <div>
+              <label for="email">Email</label>
+              <input
+				type="email"
+				id="email"
+				placeholder="почтовый ящик"
+				class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Номер телефона</label>
+			  <input 
+				type="tel" 
+				id="phone" 
+				name="phone"
+				placeholder="+7999-999-9999"
+				pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{4}"
+				class="form-input"
+			   />
+            </div>
+            <input type="submit" value="Отправить" class="submit-modal-button" />
+          </form>
+        </div>
+      </div>
+    </div>			
+<!-- модальное окно end -->	
+
 <ul class="footer-container">
   <li class="footer-item">Пн.-Вс.: 11:00 - 21:00</li>
   <li class="footer-item"><img src="img/pay.png"></li>
@@ -103,6 +168,7 @@
 		});
 	})();
 </script>
+<script src="modal.js"></script>
 <script src="today.js"></script>
 </body>
 </html>
