@@ -7,3 +7,5 @@ const year = dateObj.getFullYear();
 const output =  day + '\n' + month +', ' + year;
 
 document.querySelector('.todaydate').textContent = output; 
+
+console.log('%c --> github.com/zyk0/coffee_shops', 'background: #222; color: #bada55');

@@ -53,3 +53,20 @@ h6{
         flex: 1 1 calc(33% - 2rem);
     }
 }
+
+
+@media (min-width: 900px) and (max-width: 1199px) {
+	.card > h6 {
+		font-size: calc(1.1rem);
+		}
+}
+@media (min-width: 600px) and (max-width: 899px) {
+	.card > h6 {
+		font-size: calc(1.2rem);
+		}
+}
+@media (min-width: 199px) and (max-width: 599px) {
+	.card > h6 {
+		font-size: calc(1.5rem);
+		}
+}
